@@ -7,7 +7,7 @@ item_to_check = 'passport'
 
 is_item_packed = item_to_check in packing_list
 
-item_index = packing_list.index(item_to_check) if packing_list else -1 
+item_index = packing_list.index(item_to_check) if is_item_packed else -1
 
 # Print out the results
 print("Is the item packed?", is_item_packed)
